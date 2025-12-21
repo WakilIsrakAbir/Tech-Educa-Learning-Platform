@@ -451,7 +451,8 @@ footer .copyright .pro-links i:hover{
 /* Mobile Styles (max-width: 477px) */
 @media (max-width: 778px) {
 
-    /* Index.Html */
+    /* Index/Home Page */
+    /* Index/Home Page */
     nav {
         padding: 15px 20px;
     }
@@ -531,7 +532,9 @@ footer .copyright .pro-links i:hover{
 }
 
 @media (max-width: 477px) {
-
+    
+    /* Index/Home Page */
+    /* Index/Home Page */
     .section-p1 {
         padding: 20px 40px;
     }
@@ -572,4 +575,5 @@ footer .copyright .pro-links i:hover{
     }
 
     
+
 }
