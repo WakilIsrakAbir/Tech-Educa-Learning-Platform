@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+/* Global Tags */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+}
+
+.section-p1{
+    padding:40px 80px;
+}
+
+.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #b64a4a;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    
+}
+
+
+
+/* Style for Index/Home Page */
+/* Style for Index/Home Page */
+
+
+
+/* Navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #cbb2f7;
+    width: 100%;
+    z-index: 999;
+}
+
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    padding-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(10, 51, 82);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .navigation ul li a:hover{
+    color:  #1840c5;
+    transition: 0.3s;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+/* Home */
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)), url("/Images/back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h2{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 13px;
+    font-weight: 500;
+}
+
+#home .btn{
+    margin-top: 25px;
+    display: flex;
+}
+
+#home .btn .green{
+    background-color: green;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#home .btn .yellow{
+    background-color: rgb(159, 170, 6);
+    transition: 0.3s;
+}
+
+#home .btn .green:hover,
+#home .btn .yellow:hover{
+    background-color: #b64a4a;
+}
+
+/* Feature */
+#features{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#features .fea-base{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+#features .fea-box{
+    background-color: #f0ecec;
+    text-align: start;
+    padding: 0 15px 0 15px;
+    width: 100%;
+}
+
+#features .fea-box i{
+    font-size: 20px;
+    color: rgb(18, 34, 109);
+    padding: 5px 0 0 0;
+}
+
+#features .fea-box h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(18, 34, 109);
+    padding: 5px 0 5px 0;
+}
+
+#features .fea-box p{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(4, 6, 47);
+    padding-bottom: 5px;
+}
+
+/* Courses */
+#course{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+ 
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#course .course-box{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+
+#course .courses{
+    text-align: start;
+    background-color: aliceblue;
+    height: 50vh;
+    width: 30%;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+    border: 1px solid #cce7d0;
+    border-radius: 40px;
+    margin: 20px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i{
+    color: rgb(226, 164, 7);
+    font-size: 10px;
+}
+
+#course .courses .cost{
+    background-color: #292454;
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+}
+
+/* Registration */
+#registration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)), url("/Images/signup.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+#registration .remainder{
+    color: white;
+}
+
+#registration .remainder h1{
+    color: white;
+}
+
+#registration .remainder .time{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(14, 68, 116);
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#registration .remainder .time .date{
+    padding: 13px 13px;
+    box-shadow: 0 8px 32px 0 rgba(5, 6, 8, 0.7);
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#registration .form{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(5, 6, 8, 0.7);
+}
+
+#registration .form h3{
+    padding-bottom: 10px;
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid #292454;
+    border-radius: 5px;
+}
+
+#registration .form .btn{
+    margin-top: 10px;
+    background-color: #2b255b;
+    color: white;
+}
+
+#registration .form .btn:hover{
+    background-color: #b64a4a;
+}
+
+/* Profails */
+#experts{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#experts .expert-box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#experts .expert-box .profile{
+    background-color: rgb(193, 192, 167);
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+#experts .expert-box .profile .pro-links{
+    margin-top: 10px;
+}
+
+#experts .expert-box .profile .pro-links i{
+    padding-right: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#experts .expert-box .profile .pro-links i:hover{
+    color: #1840c5;
+}
+
+/* Footer */
+footer{
+    background-color: #292454;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: rgb(205, 187, 187);
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer li:hover{
+    color:#ffffff
+}
+
+footer p{
+    color: white;
+}
+
+footer .subscribe{
+    margin-top: 30px;
+    display: flex;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #3e367d;
+    border: none;
+    color: white;
+}
+
+footer .subscribe a{
+    background-color: #1840c5;
+    text-decoration: none;
+}
+
+footer .subscribe a:hover{
+    background-color: #b64a4a;
+}
+
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: 100%;
+}
+
+footer .copyright .pro-links i{
+    padding-right: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: white;
+}
+
+footer .copyright .pro-links i:hover{
+    color: green;
+}
+
+
+
+
+
+/* Mobile Styles (max-width: 477px) */
+@media (max-width: 778px) {
+
+    /* Index.Html */
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav img {
+        width: 130px;
+    }
+
+    #menu-btn{
+        display: initial;
+    }
+
+    #menu-close{
+        display: initial;
+        font-size: 26px;
+        color: white;
+        padding: 30px 0 20px 40px;
+    }
+
+    nav .navigation ul {
+        position: fixed;
+        top: 0;
+        right:-220px;
+        width: 220px;
+        background-color: rgb(60, 114, 164);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    nav .navigation ul.active{
+        right: 0;
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: white;
+    }
+
+    #home h2 {
+        text-align: center;
+    }
+
+    #home p {
+        width: 80%;
+    }
+
+    #course .course-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #course .courses {
+        width: 80%;
+    }
+
+    #registration .remainder .time {
+        margin-right: 10px;
+    }
+
+    #experts .expert-box {
+        flex-direction: column;
+    }
+
+    #experts .expert-box .profile {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (max-width: 477px) {
+
+    .section-p1 {
+        padding: 20px 40px;
+    }
+
+    #features .fea-base {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #registration .remainder .time {
+        flex-direction: column;
+    }
+
+    #registration {
+        flex-direction: column;
+    }
+
+    #home h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #course .courses {
+        width: 100%;
+    }
+
+    #registration .form {
+        margin-top: 20px;
+    }
+
+    footer .subscribe {
+        flex-direction: column;
+    }
+
+    footer input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    
+}
