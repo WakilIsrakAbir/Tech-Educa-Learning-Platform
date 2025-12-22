@@ -448,7 +448,7 @@ footer .copyright .pro-links i:hover{
 
 
 
-/* Mobile Styles (max-width: 477px) */
+/* Mobile Styles (max-width: 778px) */
 @media (max-width: 778px) {
 
     /* Index/Home Page */
@@ -460,6 +460,7 @@ footer .copyright .pro-links i:hover{
     nav img {
         width: 130px;
     }
+/* Menu Start */
 
     #menu-btn{
         display: initial;
@@ -498,6 +499,7 @@ footer .copyright .pro-links i:hover{
     nav .navigation ul li a{
         color: white;
     }
+/* Menu end */
 
     #home h2 {
         text-align: center;
@@ -577,3 +579,4 @@ footer .copyright .pro-links i:hover{
     
 
 }
+
